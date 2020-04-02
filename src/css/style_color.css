@@ -1,63 +1,987 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, ../compass/sass/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+/* line 25, ../compass/sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+/* line 33, ../compass/sass/_normalize.scss */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+/* line 42, ../compass/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+/* line 55, ../compass/sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 69, ../compass/sass/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+/* line 83, ../compass/sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+/* line 92, ../compass/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+/* line 105, ../compass/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 115, ../compass/sass/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+/* line 128, ../compass/sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+/* line 137, ../compass/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 145, ../compass/sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 149, ../compass/sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+/* line 160, ../compass/sass/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+/* line 172, ../compass/sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+/* line 192, ../compass/sass/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+/* line 203, ../compass/sass/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+/* line 213, ../compass/sass/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+/* line 224, ../compass/sass/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+/* line 236, ../compass/sass/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+/* line 247, ../compass/sass/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+/* line 258, ../compass/sass/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+/* line 277, ../compass/sass/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+/* line 285, ../compass/sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+/* line 294, ../compass/sass/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+/* line 306, ../compass/sass/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+/* line 316, ../compass/sass/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+/* line 327, ../compass/sass/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+/* line 336, ../compass/sass/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
 /*
-Error: File to import not found or unreadable: modules_color/parallax.
-       Load paths:
-         Compass::SpriteImporter
-         /Users/apple/Documents/coder_academy/Projects/LingYLee_T1A3/src/compass/sass
-         /Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets
-        on line 6 of /Users/apple/Documents/coder_academy/Projects/LingYLee_T1A3/src/compass/sass/style_color.scss
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+/* line 350, ../compass/sass/_normalize.scss */
+details {
+  display: block;
+}
 
-1: @import "variables";
-2: @import "normalize";
-3: @import "mixins";
-4: @import "base";
-5: 
-6: @import "modules_color/parallax";
-7: @import "modules_color/navigation";
-8: @import "modules_color/landing";
-9: @import "modules_color/about";
-10: @import "modules_color/blog";
-11: @import "modules_color/contact";
+/*
+   * Add the correct display in all browsers.
+   */
+/* line 358, ../compass/sass/_normalize.scss */
+summary {
+  display: list-item;
+}
 
-Backtrace:
-/Users/apple/Documents/coder_academy/Projects/LingYLee_T1A3/src/compass/sass/style_color.scss:6
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: modules_color/parallax.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/apple/Documents/coder_academy/Projects/LingYLee_T1A3/src/compass/sass\A          /Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets\A         on line 6 of /Users/apple/Documents/coder_academy/Projects/LingYLee_T1A3/src/compass/sass/style_color.scss\A \A 1: @import \"variables\";\A 2: @import \"normalize\";\A 3: @import \"mixins\";\A 4: @import \"base\";\A 5: \A 6: @import \"modules_color/parallax\";\A 7: @import \"modules_color/navigation\";\A 8: @import \"modules_color/landing\";\A 9: @import \"modules_color/about\";\A 10: @import \"modules_color/blog\";\A 11: @import \"modules_color/contact\";"; }
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+/* line 369, ../compass/sass/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+/* line 377, ../compass/sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 2, ../compass/sass/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", helvetica, sans-serif;
+  letter-spacing: 5px;
+}
+
+/* line 3, ../compass/sass/modules_color/_parallax.scss */
+.parallax {
+  perspective: 300px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+@media (max-width: 599px) {
+  /* line 3, ../compass/sass/modules_color/_parallax.scss */
+  .parallax {
+    perspective: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 3, ../compass/sass/modules_color/_parallax.scss */
+  .parallax {
+    perspective: none;
+  }
+}
+
+/* line 18, ../compass/sass/modules_color/_parallax.scss */
+.parallax_group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+@media (max-width: 599px) {
+  /* line 18, ../compass/sass/modules_color/_parallax.scss */
+  .parallax_group {
+    transform-style: flat;
+  }
+}
+
+/* line 30, ../compass/sass/modules_color/_parallax.scss */
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 38, ../compass/sass/modules_color/_parallax.scss */
+.parallax__layer--base {
+  transform: translateZ(0);
+  z-index: 5;
+}
+
+/* line 44, ../compass/sass/modules_color/_parallax.scss */
+.parallax__layer--back {
+  transform: translateZ(-280px) scale(2);
+  z-index: 3;
+}
+
+/* line 49, ../compass/sass/modules_color/_parallax.scss */
+.parallax__layer--fore {
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
+}
+
+/* line 54, ../compass/sass/modules_color/_parallax.scss */
+.parallax__layer--deep {
+  transform: translateZ(-550px) scale(3);
+  z-index: 2;
+}
+
+/* line 59, ../compass/sass/modules_color/_parallax.scss */
+#landing {
+  z-index: 5;
+}
+
+/* line 65, ../compass/sass/modules_color/_parallax.scss */
+#about-text {
+  z-index: 4;
+}
+
+/* line 69, ../compass/sass/modules_color/_parallax.scss */
+#blog {
+  z-index: 3;
+}
+
+/* line 73, ../compass/sass/modules_color/_parallax.scss */
+#break,
+#contact {
+  z-index: 1;
+}
+
+/* line 79, ../compass/sass/modules_color/_parallax.scss */
+#landing .parallax__layer--base {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../asset/background1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+  box-shadow: 0 50px 20px -8px #444242;
+}
+
+/* line 84, ../compass/sass/modules_color/_parallax.scss */
+#about .parallax__layer--back {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../asset/background5.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+/* line 90, ../compass/sass/modules_color/_parallax.scss */
+#about-text .parallax__layer--base {
+  opacity: 0.9;
+}
+
+/* line 94, ../compass/sass/modules_color/_parallax.scss */
+#blog .parallax__layer--back {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../asset/background2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+}
+
+/* line 99, ../compass/sass/modules_color/_parallax.scss */
+#contact .parallax__layer--base {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../asset/background4.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+  box-shadow: 0 0 200px 1px #444242;
+}
+
+/* line 104, ../compass/sass/modules_color/_parallax.scss */
+#break .parallax__layer--deep {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../asset/background8.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+}
+
+@media (max-width: 599px) {
+  /* line 111, ../compass/sass/modules_color/_parallax.scss */
+  #break {
+    display: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 111, ../compass/sass/modules_color/_parallax.scss */
+  #break {
+    display: none;
+  }
+}
+
+/* line 121, ../compass/sass/modules_color/_parallax.scss */
+#mobile-only1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../asset/background6.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+  height: 1000px;
+  opacity: 0.8;
+}
+@media (min-width: 1024px) {
+  /* line 121, ../compass/sass/modules_color/_parallax.scss */
+  #mobile-only1 {
+    display: none;
+  }
+}
+
+/* line 131, ../compass/sass/modules_color/_parallax.scss */
+#mobile-only2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../asset/background3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+  height: 1000px;
+  opacity: 0.8;
+}
+@media (min-width: 1024px) {
+  /* line 131, ../compass/sass/modules_color/_parallax.scss */
+  #mobile-only2 {
+    display: none;
+  }
+}
+
+/* line 1, ../compass/sass/modules_color/_navigation.scss */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  background: #273307;
+  z-index: 10;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+}
+@media (max-width: 599px) {
+  /* line 1, ../compass/sass/modules_color/_navigation.scss */
+  .main-nav {
+    justify-content: space-around;
+  }
+}
+/* line 19, ../compass/sass/modules_color/_navigation.scss */
+.main-nav .icon-wrapper a {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+/* line 26, ../compass/sass/modules_color/_navigation.scss */
+.main-nav .icon-wrapper a .icon-text {
+  font-size: 24px;
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 26, ../compass/sass/modules_color/_navigation.scss */
+  .main-nav .icon-wrapper a .icon-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 599px) {
+  /* line 26, ../compass/sass/modules_color/_navigation.scss */
+  .main-nav .icon-wrapper a .icon-text {
+    display: none;
+  }
+}
+/* line 39, ../compass/sass/modules_color/_navigation.scss */
+.main-nav .icon-wrapper a:hover {
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+@keyframes rainbow_animation {
+  0%,
+    100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+@media (max-width: 599px) {
+  /* line 50, ../compass/sass/modules_color/_navigation.scss */
+  .main-nav .icon-wrapper a i {
+    font-size: 2em;
+  }
+}
+
+/* line 1, ../compass/sass/modules_color/_landing.scss */
+.landing-text-wrapper {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  background: #6e6950;
+  width: 40%;
+  padding: 1rem;
+  height: auto;
+  font-size: 40px;
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  text-align: center;
+  color: whitesmoke;
+  animation: fadeIn 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+/* line 30, ../compass/sass/modules_color/_landing.scss */
+.landing-text-wrapper p {
+  margin: 2px;
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 1, ../compass/sass/modules_color/_landing.scss */
+  .landing-text-wrapper {
+    font-size: 24px;
+  }
+}
+@media (max-width: 599px) {
+  /* line 1, ../compass/sass/modules_color/_landing.scss */
+  .landing-text-wrapper {
+    font-size: 16px;
+    left: 28%;
+  }
+}
+
+/* line 1, ../compass/sass/modules_color/_about.scss */
+.about-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* line 9, ../compass/sass/modules_color/_about.scss */
+.about-head .fa-arrow-circle-down {
+  font-size: 2em;
+  margin: 0.5em;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%,
+            20%,
+            50%,
+            80%,
+            100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* line 41, ../compass/sass/modules_color/_about.scss */
+.about-head h1,
+.about-head h6 {
+  margin: 0.5em;
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 46, ../compass/sass/modules_color/_about.scss */
+  .about-head h1 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 599px) {
+  /* line 46, ../compass/sass/modules_color/_about.scss */
+  .about-head h1 {
+    font-size: 1em;
+  }
+}
+
+/* line 59, ../compass/sass/modules_color/_about.scss */
+.about-text-wrapper {
+  display: flex;
+  background: #6e6950;
+  width: 80%;
+  margin: auto;
+  height: auto;
+  padding: 2rem;
+  margin-bottom: 2em;
+  opacity: 0.8;
+}
+/* line 70, ../compass/sass/modules_color/_about.scss */
+.about-text-wrapper .self {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+}
+/* line 76, ../compass/sass/modules_color/_about.scss */
+.about-text-wrapper .text {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  padding: 1.5em;
+  color: whitesmoke;
+}
+@media (max-width: 599px) {
+  /* line 76, ../compass/sass/modules_color/_about.scss */
+  .about-text-wrapper .text {
+    font-size: 12px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 76, ../compass/sass/modules_color/_about.scss */
+  .about-text-wrapper .text {
+    font-size: 16px;
+  }
+}
+/* line 92, ../compass/sass/modules_color/_about.scss */
+.about-text-wrapper .text .CV {
+  width: 100%;
+  text-align: center;
+  padding-top: 2em;
+}
+/* line 97, ../compass/sass/modules_color/_about.scss */
+.about-text-wrapper .text .CV .downloadButton {
+  align-self: center;
+  background: #273307;
+  text-align: center;
+  margin-top: 1em;
+  padding: 0.5em;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0.5em 1em;
+  color: whitesmoke;
+  text-decoration: none;
+}
+/* line 110, ../compass/sass/modules_color/_about.scss */
+.about-text-wrapper .text .CV .downloadButton:hover {
+  color: #273307;
+  background-color: whitesmoke;
+}
+/* line 121, ../compass/sass/modules_color/_about.scss */
+.about-text-wrapper img {
+  width: 80%;
+  margin: 0.5em auto;
+  border-radius: 50%;
+}
+@media (max-width: 599px) {
+  /* line 121, ../compass/sass/modules_color/_about.scss */
+  .about-text-wrapper img {
+    width: 20%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 121, ../compass/sass/modules_color/_about.scss */
+  .about-text-wrapper img {
+    width: 20%;
+  }
+}
+@media (max-width: 599px) {
+  /* line 59, ../compass/sass/modules_color/_about.scss */
+  .about-text-wrapper {
+    flex-direction: column;
+  }
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 59, ../compass/sass/modules_color/_about.scss */
+  .about-text-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* line 2, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 8em 0;
+  padding: 2em;
+}
+@media (max-width: 599px) {
+  /* line 2, ../compass/sass/modules_color/_blog.scss */
+  .blog-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+/* line 12, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper .list {
+  flex: 1;
+  padding: 20px;
+  margin: 1em;
+  text-align: center;
+  background-color: #cfceb4;
+  height: fit-content;
+  width: 80%;
+}
+/* line 22, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper .list ul {
+  list-style-type: none;
+  background-color: white;
+  padding: 0;
+}
+/* line 28, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper .list ul li {
+  padding: 10px;
+  overflow: auto;
+}
+/* line 32, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper .list ul li:hover {
+  background: #a19f7f;
+  opacity: 0.6;
+  cursor: pointer;
+  color: whitesmoke;
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 28, ../compass/sass/modules_color/_blog.scss */
+  .blog-wrapper .list ul li {
+    font-size: 16px;
+  }
+}
+@media (max-width: 599px) {
+  /* line 28, ../compass/sass/modules_color/_blog.scss */
+  .blog-wrapper .list ul li {
+    font-size: 12px;
+  }
+}
+/* line 53, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper .cards {
+  margin: 1em;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+/* line 59, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper .cards .card {
+  display: flex;
+  background: #cfceb4;
+  margin-bottom: 1em;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* line 67, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper .cards .card:hover {
+  transform: scale(1.05, 1.05);
+  background: #a19f7f;
+}
+/* line 72, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper .cards .card a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 72, ../compass/sass/modules_color/_blog.scss */
+  .blog-wrapper .cards .card a {
+    flex-direction: column;
+  }
+}
+@media (max-width: 599px) {
+  /* line 72, ../compass/sass/modules_color/_blog.scss */
+  .blog-wrapper .cards .card a {
+    flex-direction: column;
+  }
+}
+/* line 86, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper .cards .card img {
+  margin: 1em;
+}
+/* line 90, ../compass/sass/modules_color/_blog.scss */
+.blog-wrapper .cards .card .card-content {
+  padding: 0.5em;
+}
+@media (min-width: 600px) and (max-width: 1008px) {
+  /* line 90, ../compass/sass/modules_color/_blog.scss */
+  .blog-wrapper .cards .card .card-content {
+    font-size: 16px;
+  }
+}
+@media (max-width: 599px) {
+  /* line 90, ../compass/sass/modules_color/_blog.scss */
+  .blog-wrapper .cards .card .card-content {
+    font-size: 12px;
+  }
+}
+
+/* line 1, ../compass/sass/modules_color/_contact.scss */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  width: 50%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  font-size: 1em;
+  background: #6e6950;
+  opacity: 0.7;
+}
+@media (max-width: 599px) {
+  /* line 1, ../compass/sass/modules_color/_contact.scss */
+  .contact-wrapper {
+    font-size: 12px;
+  }
+}
+/* line 23, ../compass/sass/modules_color/_contact.scss */
+.contact-wrapper .icon-container {
+  display: flex;
+  justify-content: center;
+}
+/* line 27, ../compass/sass/modules_color/_contact.scss */
+.contact-wrapper .icon-container a {
+  overflow: hidden;
+  color: whitesmoke;
+  margin: 1em;
+}
+/* line 32, ../compass/sass/modules_color/_contact.scss */
+.contact-wrapper .icon-container a:hover {
+  color: #222;
+}
+@media (max-width: 599px) {
+  /* line 36, ../compass/sass/modules_color/_contact.scss */
+  .contact-wrapper .icon-container a i {
+    font-size: 3em;
+  }
+}
