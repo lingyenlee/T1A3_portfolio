@@ -77,7 +77,7 @@
 
 
   #landing .parallax__layer--base {
-      @include backImage("../../images/background1.jpg", "landscape with waterfall");
+      @include backImage("../images/background1.jpg", "landscape with waterfall");
       box-shadow: 0 50px 20px -8px #444242;
   }
 

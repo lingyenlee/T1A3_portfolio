@@ -77,12 +77,12 @@
 
 
   #landing .parallax__layer--base {
-      @include backImage("../../images/background1.jpg", "landscape with waterfall");
+      @include backImage("../asset/background1.jpg", "landscape with waterfall");
       box-shadow: 0 50px 20px -8px #444242;
   }
 
   #about .parallax__layer--back {
-      @include backImage("../images/background5.jpeg", "a waterfall");
+      @include backImage("../asset/background5.jpeg", "a waterfall");
       opacity: 0.5;
 
   }
@@ -92,17 +92,17 @@
   }
 
   #blog .parallax__layer--back {
-      @include backImage("../images/background2.jpeg", "landscape with mountain");
+      @include backImage("../asset/background2.jpeg", "landscape with mountain");
   }
 
 
   #contact .parallax__layer--base {
-      @include backImage("../images/background4.jpeg", "a waterfall");
+      @include backImage("../asset/background4.jpeg", "a waterfall");
       box-shadow: 0 0 200px 1px #444242;
   }
 
   #break .parallax__layer--deep {
-    @include backImage("../images/background8.jpeg", "landscape with mountain");
+    @include backImage("../asset/background8.jpeg", "landscape with mountain");
     //   background: radial-gradient(ellipse at center, #3a4757 0%, #090a0f 100%);
   //  opacity: 0.5;
 
@@ -119,7 +119,7 @@
   }
 
   #mobile-only1 {
-      @include backImage("../images/background6.jpeg", "a waterfall");
+      @include backImage("../asset/background6.jpeg", "a waterfall");
       height: 1000px;
       opacity: 0.8;
 
@@ -129,7 +129,7 @@
   }
 
   #mobile-only2 {
-      @include backImage("../images/background3.jpeg", "a waterfall");
+      @include backImage("../asset/background3.jpeg", "a waterfall");
       height: 1000px;
       opacity: 0.8;
 
