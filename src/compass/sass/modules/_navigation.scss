@@ -1,0 +1,58 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+    background: $navbar_main;
+    opacity: 0.8;
+    z-index: 10;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+
+    @include phone {
+        justify-content: space-around;
+    }
+
+
+    .icon-wrapper {
+
+        a {
+            display: flex;
+            align-items: center;
+            margin: 15px;
+            text-decoration: none;
+            color: $text-white;
+
+            .icon-text {
+                font-size: 24px;
+
+                @include tablet {
+                    font-size: 18px;
+                }
+
+                @include phone {
+                    display: none;
+                }
+            }
+
+
+            &:hover {
+                background: $color-background;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                animation: rainbow_animation 6s ease-in-out infinite;
+                background-size: 400% 100%;
+
+                @include animation-mixin(rainbow_animation, 0, 100%);
+            }
+
+            i {
+                @include phone {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}

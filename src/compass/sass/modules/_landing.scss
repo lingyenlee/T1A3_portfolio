@@ -1,0 +1,28 @@
+.landing-text-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    background: $text-wrapper-background;
+    width: 40%;
+    padding: 1rem;
+    height: auto;
+    font-size: 40px;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    text-align: center;
+
+
+    p {
+        margin: 2px;
+    }
+
+    @include tablet {
+        font-size: 24px;
+    }
+
+    @include phone {
+        font-size: 16px;
+        left: 28%;
+    }
+}

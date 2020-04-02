@@ -1,0 +1,57 @@
+$phone-width: 600px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$a-tags-hover: "a:active, a:hover";
+$color-background: linear-gradient(to right,
+  #6666ff,
+  #0099ff,
+  #00ff00,
+  #ff3399,
+  #6666ff);
+
+
+@mixin phone {
+  @media (max-width: #{$phone-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$phone-width}) and (max-width: #{$desktop-width - 1pc}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+
+@mixin backImage($image, $alt: alt,
+  $height: 100vh,
+  $bgPos: center center) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url($image);
+  background-repeat: no-repeat;
+  background-position: $bgPos;
+  background-size: cover;
+  height: $height;
+  z-index: 0;
+  
+}
+
+// mixin for animation 
+@mixin animation-mixin($name, $from, $to) {
+  @keyframes #{$name} {
+    0%,
+    100% {
+      background-position: $from 0;
+    }
+
+    50% {
+      background-position: $to 0;
+    }
+  }
+}
