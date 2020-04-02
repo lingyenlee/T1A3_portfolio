@@ -102,7 +102,7 @@
   }
 
   #break .parallax__layer--deep {
-      @include backImage("../images/background8.jpeg", "landscape with mountain");
+      @include backImage("../asset/background8.jpeg", "landscape with mountain");
       //   background: radial-gradient(ellipse at center, #3a4757 0%, #090a0f 100%);
       //  opacity: 0.5;
 
