@@ -1,0 +1,104 @@
+
+.blog-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 8em 0;
+    padding: 2em;
+
+    @include phone {
+        flex-direction: column-reverse;
+    }
+
+    .list {
+        flex: 1;
+        padding: 20px;
+        margin: 1em;
+        text-align: center;
+        background-color: $blog_background_new;
+        height: fit-content;
+        width: 80%;
+    
+    
+        ul {
+            list-style-type: none;
+            background-color: white;
+            padding: 0;
+
+
+            li {
+                padding: 10px;
+                overflow: auto;
+
+                &:hover {
+                    background: $blog_hover_new;
+                    opacity: 0.6;
+                    cursor: pointer;
+                    color: $text-white;
+                }
+
+
+                @include tablet {
+                    font-size: 16px;
+                }
+
+                @include phone {
+                    font-size: 12px;
+                }
+
+            }
+        }
+    }
+
+
+    .cards {
+        margin: 1em;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+
+        .card {
+            display: flex;
+            background: $blog_background_new;
+            margin-bottom: 1em;
+            text-align: center;
+            box-shadow: $box-shadow;
+    
+    
+            &:hover {
+                transform: scale(1.05, 1.05);
+                background: $blog_hover_new;
+            }
+    
+            a {
+                display: flex;
+                color: black;
+                text-decoration: none;
+    
+                @include tablet {
+                    flex-direction: column;
+                }
+
+                @include phone {
+                    flex-direction: column;
+                }
+            }
+    
+            img {
+                margin: 1em;
+            }
+
+            .card-content {
+                padding: 0.5em;
+
+                @include tablet {
+                    font-size: 16px;
+                }
+
+                @include phone {
+                    font-size: 12px;
+                }
+
+            }
+        }
+    }
+}
