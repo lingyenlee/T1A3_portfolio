@@ -1,0 +1,140 @@
+  // Parallax config
+
+  .parallax {
+      perspective: 300px;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      @include phone {
+          perspective: none;
+      }
+
+      @include tablet {
+          perspective: none;
+      }
+  }
+
+  .parallax_group {
+      position: relative;
+      height: 100vh;
+      transform-style: preserve-3d;
+      transition: 0.5s;
+
+      @include phone {
+          transform-style: flat;
+      }
+
+  }
+
+  .parallax__layer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  }
+
+  .parallax__layer--base {
+      transform: translateZ(0);
+      z-index: 5;
+  }
+
+
+  .parallax__layer--back {
+      transform: translateZ(-280px) scale(2);
+      z-index: 3;
+  }
+
+  .parallax__layer--fore {
+      transform: translateZ(90px) scale(0.7);
+      z-index: 1;
+  }
+
+  .parallax__layer--deep {
+      transform: translateZ(-550px) scale(3);
+      z-index: 2;
+  }
+
+  #landing {
+      z-index: 5;
+
+  }
+
+
+  #about-text {
+      z-index: 4;
+  }
+
+  #blog {
+      z-index: 3;
+  }
+
+  #break,
+  #contact {
+      z-index: 1;
+  }
+
+
+  #landing .parallax__layer--base {
+      @include backImage("../../images/background1.jpg", "landscape with waterfall");
+      box-shadow: 0 50px 20px -8px #444242;
+  }
+
+  #about .parallax__layer--back {
+      @include backImage("../images/background5.jpeg", "a waterfall");
+      opacity: 0.5;
+
+  }
+
+  #about-text .parallax__layer--base {
+      opacity: 0.9;
+  }
+
+  #blog .parallax__layer--back {
+      @include backImage("../images/background2.jpeg", "landscape with mountain");
+  }
+
+
+  #contact .parallax__layer--base {
+      @include backImage("../images/background4.jpeg", "a waterfall");
+      box-shadow: 0 0 200px 1px #444242;
+  }
+
+  #break .parallax__layer--deep {
+    @include backImage("../images/background8.jpeg", "landscape with mountain");
+    //   background: radial-gradient(ellipse at center, #3a4757 0%, #090a0f 100%);
+  //  opacity: 0.5;
+
+  }
+
+  #break {
+      @include phone {
+          display: none
+      }
+
+      @include tablet {
+          display: none;
+      }
+  }
+
+  #mobile-only1 {
+      @include backImage("../images/background6.jpeg", "a waterfall");
+      height: 1000px;
+      opacity: 0.8;
+
+      @include desktop {
+          display: none;
+      }
+  }
+
+  #mobile-only2 {
+      @include backImage("../images/background3.jpeg", "a waterfall");
+      height: 1000px;
+      opacity: 0.8;
+
+      @include desktop {
+          display: none;
+      }
+
+  }
