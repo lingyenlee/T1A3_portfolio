@@ -1,12 +1,14 @@
 # Portfolio Website T1A3
 
-Website published - https://lingyenlee.netlify.com/
-Github repo  old - https://github.com/lingyenlee/my_portfolio
-Github repo new - https://github.com/lingyenlee/T1A3_portfolio
-main - master branch
-color change - new_color branch
-font change - new_font branch
-new layout chnage - new_layout branch
+1. Website published - https://lingyenlee.netlify.com/
+
+2. Github repo  old - https://github.com/lingyenlee/my_portfolio
+
+3. Github repo new - https://github.com/lingyenlee/T1A3_portfolio
+- main - master branch
+- color change - new_color branch
+- font change - new_font branch
+- new layout chnage - new_layout branch
 
 ### Purpose
 
